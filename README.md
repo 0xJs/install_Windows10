@@ -25,6 +25,7 @@ Set-MpPreference -ExclusionPath C:\Tools\*
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 
 # Download AD tools
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
 Set-Location C:\Tools\AD
 git clone https://github.com/samratashok/ADModule
 git clone https://github.com/PowerShellMafia/PowerSploit
