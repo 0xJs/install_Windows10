@@ -4,7 +4,7 @@
 
 # Download tools manually
 - Git https://gitforwindows.org/
-- [Visual studio 2019]((https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019)) or [here](https://visualstudio.microsoft.com/vs/older-downloads/) and install it. 
+- [Visual studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019) or [here](https://visualstudio.microsoft.com/vs/older-downloads/) and install it. 
   - Make sure to select ".Net Desktop Development" and "Desktop Developmenr with C++"
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Notepad ++](https://notepad-plus-plus.org/downloads/)
