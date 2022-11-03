@@ -1,5 +1,5 @@
 # Install W10
-- Download W10 ISO from Evaluation Center https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise or with the Media Creation Tool https://www.microsoft.com/en-us/software-download/windows10 and install Windows 10 Enterprise or Pro
+- Download W10 ISO from [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) or with the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) and install Windows 10 Enterprise or Pro
 - Disable stuff you want (cortana, search, task, news and interest etc) from the taskbar and update windows! Restart the machine a couple of times till there are no updates left.
 
 # Download tools manually
