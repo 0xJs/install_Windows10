@@ -4,14 +4,14 @@
 
 # Download tools manually
 - Git https://gitforwindows.org/
-- Visual studio 2019 https://visualstudio.microsoft.com/vs/older-downloads/ and install it. Maybe this link works: https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019 Make sure to select ".Net Desktop Development" and "Desktop Developmenr with C++"
-- Visual Studio Code https://code.visualstudio.com/
-- Notepad ++ https://notepad-plus-plus.org/downloads/ 
-- Firefox https://www.mozilla.org/en-US/firefox/download/thanks/
+- [Visual studio 2019]((https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019)) or [here](https://visualstudio.microsoft.com/vs/older-downloads/) and install it. 
+  - Make sure to select ".Net Desktop Development" and "Desktop Developmenr with C++"
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Notepad ++](https://notepad-plus-plus.org/downloads/)
+- [Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/)
 - Download "Windows Terminal" through the Windows Store
 - Download "Python 3.10" through the Windows Store
 - Open internet explorer and select use recommended settings.
-
 
 #### Tools PowerShell
 ```
