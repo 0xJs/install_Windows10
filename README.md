@@ -2,7 +2,7 @@
 - Download W10 ISO from [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) or with the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) and install Windows 10 Enterprise or Pro
 - Disable stuff you want (cortana, search, task, news and interest etc) from the taskbar and update windows! Restart the machine a couple of times till there are no updates left.
 
-# Download tools manually
+## Download tools manually
 - Git https://gitforwindows.org/
 - [Visual studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019) or [here](https://visualstudio.microsoft.com/vs/older-downloads/) and install it. 
   - Make sure to select ".Net Desktop Development" and "Desktop Developmenr with C++"
@@ -13,7 +13,7 @@
 - Download "Python 3.10" through the Windows Store
 - Open internet explorer and select use recommended settings.
 
-#### Tools PowerShell
+## Tools PowerShell
 ```
 # Create directories
 Set-Location C:\; New-Item "C:\Tools\" -ItemType "Directory"; New-Item "C:\Tools\AD" -ItemType "Directory"; New-Item "C:\Tools\Azure" -ItemType "Directory"; New-Item "C:\Tools\Evasion" -ItemType "Directory"; New-Item "C:\Tools\Misc" -ItemType "Directory"
