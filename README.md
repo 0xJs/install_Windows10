@@ -11,6 +11,7 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Notepad ++](https://notepad-plus-plus.org/downloads/)
 - [Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/)
+- [OpenVPN}(https://openvpn.net/community-downloads/)
 - Download "Windows Terminal" through the Windows Store
 - Download "Python 3.10" through the Windows Store
 - Open internet explorer and select use recommended settings.
