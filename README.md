@@ -22,7 +22,8 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 Set-Location C:\; New-Item "C:\Tools\" -ItemType "Directory"; New-Item "C:\Tools\AD" -ItemType "Directory"; New-Item "C:\Tools\Azure" -ItemType "Directory"; New-Item "C:\Tools\Evasion" -ItemType "Directory"; New-Item "C:\Tools\Misc" -ItemType "Directory"
 
 # Add exclusion for C:\Tools\ and set execution policy unrestricted
-Set-MpPreference -ExclusionPath C:\Tools\*
+Set-MpPreference -ExclusionPath C:\Tools\*, %userprofile%\.shiv\*
+
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 
 # Download AD tools
