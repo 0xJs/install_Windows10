@@ -25,9 +25,9 @@ Set-Location C:\; New-Item "C:\Tools\" -ItemType "Directory"; New-Item "C:\Tools
 Set-MpPreference -ExclusionPath C:\Tools\*, C:\users\*\.shiv\*, C:\users\*\.cme\*
 
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
 
 # Download AD tools
-Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
 Set-Location C:\Tools\AD
 git clone https://github.com/samratashok/ADModule
 git clone https://github.com/PowerShellMafia/PowerSploit
