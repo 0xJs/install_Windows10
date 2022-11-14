@@ -69,6 +69,7 @@ Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/msonline.1.1.18
 Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/microsoft.graph.1.7.0.nupkg -OutFile microsoft.graph.1.7.0.zip; Expand-Archive microsoft.graph.1.7.0.zip; Remove-Item microsoft.graph.1.7.0.zip
 Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/az.7.1.0.nupkg -OutFile az.7.1.0.zip; Expand-Archive az.7.1.0.zip; Remove-Item az.7.1.0.zip
 Invoke-WebRequest https://github.com/BloodHoundAD/AzureHound/releases/download/v1.2.1/azurehound-windows-amd64.zip -OutFile azurehound-windows-amd64.zip; Expand-Archive azurehound-windows-amd64.zip; Remove-Item azurehound-windows-amd64.zip
+Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/exchangeonlinemanagement.3.0.0.nupkg -OutFile exchangeonlinemanagement.3.0.0.zip; Expand-Archive exchangeonlinemanagement.3.0.0.zip; Remove-Item exchangeonlinemanagement.3.0.0.zip
 
 git clone https://github.com/NetSPI/MicroBurst
 git clone https://github.com/Gerenios/AADInternals
