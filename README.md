@@ -78,6 +78,9 @@ git clone https://github.com/Azure/Stormspotter
 git clone https://github.com/dirkjanm/ROADtools
 git clone https://github.com/0xJs/AzurePowerCommands
 
+Install-Module -Name Az -Scope CurrentUser -Repository PSGallery -Force -Confirm
+Install-Module -Name Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force -Confirm
+
 # General tools
 Set-Location C:\Tools\Misc
 Invoke-WebRequest https://github.com/islamadel/bat2exe/archive/refs/tags/2.0.zip -outfile 2.0.zip; Expand-Archive 2.0.zip; Remove-Item 2.0.zip; Move-Item .\2.0\bat2exe-2.0\ C:\Tools\Misc\; Remove-Item C:\Tools\Misc\2.0\
