@@ -45,6 +45,9 @@ git clone https://github.com/AlsidOfficial/WSUSpendu
 git clone https://github.com/maaaaz/impacket-examples-windows
 git clone https://github.com/dafthack/MailSniper
 git clone https://github.com/BloodHoundAD/BloodHound
+git clone https://github.com/mandiant/ADFSDump
+git clone https://github.com/szymex73/ADFSpoof
+git clone https://github.com/PowerShellMafia/PowerSCCM
 
 Invoke-WebRequest https://download.sysinternals.com/files/SysinternalsSuite.zip -OutFile SysinternalsSuite.zip; Expand-Archive SysinternalsSuite.zip; Remove-Item SysinternalsSuite.zip
 Invoke-WebRequest https://www.heidisql.com/downloads/releases/HeidiSQL_12.1_64_Portable.zip -OutFile HeidiSQL_12.1_64_Portable.zip; Expand-Archive HeidiSQL_12.1_64_Portable.zip; Remove-Item HeidiSQL_12.1_64_Portable.zip
