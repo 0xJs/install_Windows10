@@ -16,6 +16,7 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 - Download "Python 3.10" through the Windows Store
 - Open internet explorer and select use recommended settings.
 - [Process hacker](https://processhacker.sourceforge.io/downloads.php)
+- [PE Bear](https://github.com/hasherezade/pe-bear-releases)
 
 ## Tools PowerShell
 ```
