@@ -15,6 +15,7 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 - Download "Windows Terminal" through the Windows Store
 - Download "Python 3.10" through the Windows Store
 - Open internet explorer and select use recommended settings.
+- Process hacker https://processhacker.sourceforge.io/downloads.php
 
 ## Tools PowerShell
 ```
