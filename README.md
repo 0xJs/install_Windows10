@@ -41,7 +41,6 @@ git clone https://github.com/NetSPI/PowerUpSQL
 git clone https://github.com/itm4n/PrivescCheck
 git clone https://github.com/Dliv3/SharpGPO
 git clone https://github.com/leechristensen/SpoolSample
-git clone https://github.com/AlsidOfficial/WSUSpendu
 git clone https://github.com/maaaaz/impacket-examples-windows
 git clone https://github.com/dafthack/MailSniper
 git clone https://github.com/BloodHoundAD/BloodHound
