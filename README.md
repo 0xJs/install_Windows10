@@ -17,6 +17,7 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 - Open internet explorer and select use recommended settings.
 - [Process hacker](https://processhacker.sourceforge.io/downloads.php)
 - [PE Bear](https://github.com/hasherezade/pe-bear-releases)
+- [x64dbg](https://x64dbg.com/)
 
 ## Tools PowerShell
 ```
