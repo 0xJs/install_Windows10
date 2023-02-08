@@ -5,15 +5,8 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 - Disable stuff you want (cortana, search, task, news and interest etc) from the taskbar and update windows! Restart the machine a couple of times till there are no updates left.
 
 ## Download tools manually
-- Git https://gitforwindows.org/
 - [Visual studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019) or [here](https://visualstudio.microsoft.com/vs/older-downloads/) and install it. 
   - Make sure to select ".Net Desktop Development" and "Desktop Development with C++"
-- [Visual Studio Code](https://code.visualstudio.com/)
-- [Notepad ++](https://notepad-plus-plus.org/downloads/)
-- [Firefox](https://www.mozilla.org/en-US/firefox/download/thanks/)
-- [OpenVPN](https://openvpn.net/community-downloads/)
-- Download "Windows Terminal" through the Windows Store
-- Download "Python 3.10" through the Windows Store
 - Open internet explorer and select use recommended settings.
 - [Process hacker](https://processhacker.sourceforge.io/downloads.php)
 - [PE Bear](https://github.com/hasherezade/pe-bear-releases)
@@ -26,6 +19,15 @@ Set-Location C:\; New-Item "C:\Tools\" -ItemType "Directory"; New-Item "C:\Tools
 
 # Add exclusion for C:\Tools\ and set execution policy unrestricted
 Set-MpPreference -ExclusionPath C:\Tools\*, C:\users\*\.shiv\*, C:\users\*\.cme\*
+
+# Download some tools with winget
+winget install -e --id Python.Python.3.10
+winget install -e --id Microsoft.WindowsTerminal
+winget install -e --id Microsoft.VisualStudioCode
+winget install -e --id Notepad++.Notepad++
+winget install -e --id Mozilla.Firefox.ESR
+winget install -e --id Git.Git
+winget install -e --id OpenVPNTechnologies.OpenVPN
 
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
