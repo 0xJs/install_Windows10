@@ -55,7 +55,6 @@ git clone https://github.com/mandiant/ADFSDump
 git clone https://github.com/szymex73/ADFSpoof
 git clone https://github.com/PowerShellMafia/PowerSCCM
 
-Invoke-WebRequest https://download.sysinternals.com/files/SysinternalsSuite.zip -OutFile SysinternalsSuite.zip; Expand-Archive SysinternalsSuite.zip; Remove-Item SysinternalsSuite.zip
 Invoke-WebRequest https://www.heidisql.com/downloads/releases/HeidiSQL_12.1_64_Portable.zip -OutFile HeidiSQL_12.1_64_Portable.zip; Expand-Archive HeidiSQL_12.1_64_Portable.zip; Remove-Item HeidiSQL_12.1_64_Portable.zip
 Invoke-WebRequest https://github.com/MichaelGrafnetter/DSInternals/releases/download/v4.7/DSInternals_v4.7.zip -OutFile DSInternals_v4.7.zip; Expand-Archive DSInternals_v4.7.zip; Remove-Item DSInternals_v4.7.zip
 Invoke-WebRequest https://github.com/Porchetta-Industries/CrackMapExec/releases/download/v5.3.0/cme-windows-latest-3.10.zip -OutFile cme-windows-latest-3.10.zip; Expand-Archive cme-windows-latest-3.10.zip; Remove-Item cme-windows-latest-3.10.zip
@@ -96,4 +95,5 @@ Install-Module -Name Microsoft.Graph.Intune -Force -Confirm
 Set-Location C:\Tools\Misc
 Invoke-WebRequest https://github.com/islamadel/bat2exe/archive/refs/tags/2.0.zip -outfile 2.0.zip; Expand-Archive 2.0.zip; Remove-Item 2.0.zip; Move-Item .\2.0\bat2exe-2.0\ C:\Tools\Misc\; Remove-Item C:\Tools\Misc\2.0\
 Invoke-WebRequest https://github.com/microsoft/etl2pcapng/releases/download/v1.7.0/etl2pcapng.zip -OutFile etl2pcapng.zip; Expand-Archive etl2pcapng.zip; Remove-Item etl2pcapng.zip
+Invoke-WebRequest https://download.sysinternals.com/files/SysinternalsSuite.zip -OutFile SysinternalsSuite.zip; Expand-Archive SysinternalsSuite.zip; Remove-Item SysinternalsSuite.zip
 ```
