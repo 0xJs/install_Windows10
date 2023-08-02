@@ -71,7 +71,7 @@ Invoke-WebRequest https://github.com/mkaring/ConfuserEx/releases/download/v1.6.0
 
 # Download Azure Tools
 Set-Location C:\Tools\Azure\
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azuread.2.0.2.140.nupkg -OutFile azuread.2.0.2.140.zip; Expand-Archive azuread.2.0.2.140.zip; Remove-Item Expand-Archive azuread.2.0.2.140.zip
+Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azuread.2.0.2.140.nupkg -OutFile azuread.2.0.2.140.zip; Expand-Archive azuread.2.0.2.140.zip; Remove-Item azuread.2.0.2.140.zip
 Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azureadpreview.2.0.2.149.nupkg -OutFile azureadpreview.2.0.2.149.zip; Expand-Archive azureadpreview.2.0.2.149.zip; Remove-Item azureadpreview.2.0.2.149.zip
 Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/msonline.1.1.183.66.nupkg -OutFile msonline.1.1.183.66.zip; Expand-Archive msonline.1.1.183.66.zip; Remove-Item msonline.1.1.183.66.zip
 Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/microsoft.graph.1.7.0.nupkg -OutFile microsoft.graph.1.7.0.zip; Expand-Archive microsoft.graph.1.7.0.zip; Remove-Item microsoft.graph.1.7.0.zip
