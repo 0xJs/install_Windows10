@@ -23,7 +23,7 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 Set-Location C:\; New-Item "C:\Tools\" -ItemType "Directory"; New-Item "C:\Tools\AD" -ItemType "Directory"; New-Item "C:\Tools\Azure" -ItemType "Directory"; New-Item "C:\Tools\Evasion" -ItemType "Directory"; New-Item "C:\Tools\Misc" -ItemType "Directory"
 
 # Add exclusion for C:\Tools\ and set execution policy unrestricted
-Set-MpPreference -ExclusionPath C:\Tools\*, C:\users\*\.shiv\*, C:\users\*\.cme\*
+Set-MpPreference -ExclusionPath C:\Tools\*, C:\users\*\.nxc\*, C:\users\*\source\*
 
 # Download some tools with winget
 winget install -e --id Python.Python.3.11
