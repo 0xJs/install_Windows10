@@ -4,6 +4,7 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 - Download W10 ISO from [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) or with the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) and install Windows 10 Enterprise or Pro
 - Install all updates, restart and repeat till there are no more updates
 - Disable stuff you want (cortana, search, task, news and interest etc) from the taskbar and update windows! Restart the machine a couple of times till there are no updates left.
+- Open defender and disable `Cloud-delivered protection` and `Automatic sample submission`
 
 ## Download tools manually
 - [Vistual Studio 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false) and install it. 
@@ -25,11 +26,9 @@ Set-Location C:\; New-Item "C:\Tools\" -ItemType "Directory"; New-Item "C:\Tools
 Set-MpPreference -ExclusionPath C:\Tools\*, C:\users\*\.shiv\*, C:\users\*\.cme\*
 
 # Download some tools with winget
-winget install -e --id Python.Python.3.10
+winget install -e --id Python.Python.3.11
 winget install -e --id Microsoft.WindowsTerminal
-winget install -e --id Microsoft.VisualStudioCode
 winget install -e --id Notepad++.Notepad++
-winget install -e --id Mozilla.Firefox.ESR
 winget install -e --id Git.Git
 winget install -e --id OpenVPNTechnologies.OpenVPN
 
