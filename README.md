@@ -27,7 +27,7 @@ Set-MpPreference -ExclusionPath C:\Tools\*, C:\users\*\.shiv\*, C:\users\*\.cme\
 
 # Download some tools with winget
 winget install -e --id Python.Python.3.11
-winget install -e --id Microsoft.WindowsTerminal
+winget install -e --id 9N0DX20HK701
 winget install -e --id Notepad++.Notepad++
 winget install -e --id Git.Git
 winget install -e --id OpenVPNTechnologies.OpenVPN
