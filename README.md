@@ -58,7 +58,7 @@ git clone https://github.com/PowerShellMafia/PowerSCCM
 
 Invoke-WebRequest https://www.heidisql.com/downloads/releases/HeidiSQL_12.1_64_Portable.zip -OutFile HeidiSQL_12.1_64_Portable.zip; Expand-Archive HeidiSQL_12.1_64_Portable.zip; Remove-Item HeidiSQL_12.1_64_Portable.zip
 Invoke-WebRequest https://github.com/MichaelGrafnetter/DSInternals/releases/download/v4.7/DSInternals_v4.7.zip -OutFile DSInternals_v4.7.zip; Expand-Archive DSInternals_v4.7.zip; Remove-Item DSInternals_v4.7.zip
-Invoke-WebRequest https://github.com/Porchetta-Industries/CrackMapExec/releases/download/v5.3.0/cme-windows-latest-3.10.zip -OutFile cme-windows-latest-3.10.zip; Expand-Archive cme-windows-latest-3.10.zip; Remove-Item cme-windows-latest-3.10.zip
+Invoke-WebRequest https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc.exe -OutFile nxc.exe
 
 # Download Evasion tools
 Set-Location C:\Tools\Evasion\
