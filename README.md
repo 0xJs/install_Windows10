@@ -6,7 +6,9 @@ Installation notes from when I install my Windows 10 machine for penetration tes
 - Disable stuff you want (cortana, search, task, news and interest etc) from the taskbar and update windows! Restart the machine a couple of times till there are no updates left.
 
 ## Download tools manually
-- [Visual studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019) or [here](https://visualstudio.microsoft.com/vs/older-downloads/) and install it. 
+- [Vistual Studio 2022](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false) and install it. 
+  - Make sure to select ".Net Desktop Development" and "Desktop Development with C++"
+- [Visual Studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16&src=myvs&utm_medium=microsoft&utm_source=my.visualstudio.com&utm_campaign=download&utm_content=vs+community+2019) or [here](https://visualstudio.microsoft.com/vs/older-downloads/) and install it. 
   - Make sure to select ".Net Desktop Development" and "Desktop Development with C++"
 - Open internet explorer and select use recommended settings.
 - [Process hacker](https://processhacker.sourceforge.io/downloads.php)
