@@ -91,6 +91,8 @@ git clone https://github.com/0xJs/AzurePowerCommands
 Install-Module -Name Az -Repository PSGallery -Force -Confirm
 Install-Module -Name Microsoft.Graph -Repository PSGallery -Force -Confirm
 Install-Module -Name Microsoft.Graph.Intune -Force -Confirm
+Install-Module ExchangePowerShell
+Install-Module ExchangeOnlineManagement
 
 # General tools
 Set-Location C:\Tools\Misc
