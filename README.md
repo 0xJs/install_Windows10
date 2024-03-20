@@ -87,6 +87,7 @@ git clone https://github.com/dafthack/MFASweep
 git clone https://github.com/Azure/Stormspotter
 git clone https://github.com/dirkjanm/ROADtools
 git clone https://github.com/0xJs/AzurePowerCommands
+git clone https://github.com/rvrsh3ll/TokenTactics
 
 Install-Module -Name Az -Repository PSGallery -Force -Confirm
 Install-Module -Name Microsoft.Graph -Repository PSGallery -Force -Confirm
