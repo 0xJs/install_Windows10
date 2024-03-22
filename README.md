@@ -96,7 +96,7 @@ git clone https://github.com/dirkjanm/ROADtools
 git clone https://github.com/0xJs/AzurePowerCommands
 git clone https://github.com/rvrsh3ll/TokenTactics
 New-Item TokenTacticsEST -ItemType Directory; Set-Location C:\Tools\Azure\TokenTacticsEST; git clone https://github.com/rotarydrone/TokenTactics; Set-Location C:\Tools\Azure\
-git clone https://github.com/RedByte1337/GraphSpy
+git clone https://github.com/RedByte1337/GraphSpy; Set-Location C:\Tools\Azure\GraphSpy; python3 -m pip install -r requirements.txt; Set-Location C:\Tools\Azure\
 git clone https://github.com/dafthack/GraphRunner
 
 Install-Module -Name Az -Repository PSGallery -Force -Confirm
