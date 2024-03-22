@@ -35,6 +35,13 @@ winget install -e --id OpenVPNTechnologies.OpenVPN
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
 
+# Setup pipx
+python -m pip install pipx
+python -m pipx ensurepath
+
+# Pipx tools install
+python -m pipx install graphspy
+
 # Download AD tools
 Set-Location C:\Tools\AD
 git clone https://github.com/samratashok/ADModule
