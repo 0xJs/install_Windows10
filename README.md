@@ -13,6 +13,7 @@ Installation notes from when I install my Windows 10 machine for penetration tes
   - Make sure to select ".Net Desktop Development" and "Desktop Development with C++"
 - Open internet explorer and select use recommended settings.
 - [Process hacker](https://processhacker.sourceforge.io/downloads.php)
+- [System Informer](https://systeminformer.sourceforge.io/) - Process Hacker replacement
 - [PE Bear](https://github.com/hasherezade/pe-bear-releases)
 - [x64dbg](https://x64dbg.com/)
 - [APIMonitor](http://www.rohitab.com/downloads)
