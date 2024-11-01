@@ -1,7 +1,7 @@
 Installation notes from when I install my Windows 11 machine for penetration testing. Focussing on On-Prem Active Directory and Azure. I wrote these notes down so it is easier to reinstall my system. Posted it publicly as inspiration for others. If you have any good tool recommendations feel free to DM me on discord 0xjs#9027.
 
-# Install W10
-- Download W11 ISO from [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/) or with the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/) and install Windows 10 Enterprise or Pro
+# Install W11
+- Download W11 ISO from [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/) or with the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/) and install Windows 11 Enterprise or Pro
 - Install all updates, restart and repeat till there are no more updates
 - Disable stuff you want (cortana, search, task, news and interest etc) from the taskbar and update windows! Restart the machine a couple of times till there are no updates left.
 - Open defender and disable `Cloud-delivered protection` and `Automatic sample submission`
