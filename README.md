@@ -1,7 +1,7 @@
-Installation notes from when I install my Windows 10 machine for penetration testing. Focussing on On-Prem Active Directory and Azure. I wrote these notes down so it is easier to reinstall my system. Posted it publicly as inspiration for others. If you have any good tool recommendations feel free to DM me on discord 0xjs#9027.
+Installation notes from when I install my Windows 11 machine for penetration testing. Focussing on On-Prem Active Directory and Azure. I wrote these notes down so it is easier to reinstall my system. Posted it publicly as inspiration for others. If you have any good tool recommendations feel free to DM me on discord 0xjs#9027.
 
 # Install W10
-- Download W10 ISO from [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-10-enterprise) or with the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/windows10) and install Windows 10 Enterprise or Pro
+- Download W11 ISO from [Evaluation Center](https://www.microsoft.com/en-us/evalcenter/) or with the [Media Creation Tool](https://www.microsoft.com/en-us/software-download/) and install Windows 10 Enterprise or Pro
 - Install all updates, restart and repeat till there are no more updates
 - Disable stuff you want (cortana, search, task, news and interest etc) from the taskbar and update windows! Restart the machine a couple of times till there are no updates left.
 - Open defender and disable `Cloud-delivered protection` and `Automatic sample submission`
@@ -27,8 +27,7 @@ Set-Location C:\; New-Item "C:\Tools\" -ItemType "Directory"; New-Item "C:\Tools
 Set-MpPreference -ExclusionPath C:\Tools\*, C:\users\*\.nxc\*, C:\users\*\source\*
 
 # Download some tools with winget
-winget install -e --id Python.Python.3.11
-winget install -e --id 9N0DX20HK701
+winget install -e --id Python.Python.3.14
 winget install -e --id Notepad++.Notepad++
 winget install -e --id Git.Git
 winget install -e --id OpenVPNTechnologies.OpenVPN
@@ -39,6 +38,9 @@ Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
 # Setup pipx
 python -m pip install pipx
 python -m pipx ensurepath
+
+# Setup virtualenv
+pipx install virtualenv
 
 # Pipx tools install
 python -m pipx install graphspy
@@ -64,9 +66,9 @@ git clone https://github.com/mandiant/ADFSDump
 git clone https://github.com/szymex73/ADFSpoof
 git clone https://github.com/PowerShellMafia/PowerSCCM
 
-Invoke-WebRequest https://www.heidisql.com/downloads/releases/HeidiSQL_12.1_64_Portable.zip -OutFile HeidiSQL_12.1_64_Portable.zip; Expand-Archive HeidiSQL_12.1_64_Portable.zip; Remove-Item HeidiSQL_12.1_64_Portable.zip
-Invoke-WebRequest https://github.com/MichaelGrafnetter/DSInternals/releases/download/v4.7/DSInternals_v4.7.zip -OutFile DSInternals_v4.7.zip; Expand-Archive DSInternals_v4.7.zip; Remove-Item DSInternals_v4.7.zip
-Invoke-WebRequest https://github.com/Pennyw0rth/NetExec/releases/download/v1.1.0/nxc.exe -OutFile nxc.exe
+Invoke-WebRequest https://www.heidisql.com/downloads/releases/HeidiSQL_12.8_64_Portable.zip -OutFile HeidiSQL_12.8_64_Portable.zip; Expand-Archive HeidiSQL_12.8_64_Portable.zip; Remove-Item HeidiSQL_12.8_64_Portable.zip
+Invoke-WebRequest https://github.com/MichaelGrafnetter/DSInternals/releases/download/v4.14/DSInternals_v4.14.zip -OutFile DSInternals_v4.14.zip; Expand-Archive DSInternals_v4.14.zip; Remove-Item DSInternals_v4.14.zip
+Invoke-WebRequest https://github.com/Pennyw0rth/NetExec/releases/download/v1.3.0/nxc.exe.zip -OutFile nxc.exe.zip; Expand-Archive nxc.exe.zip; Remove-Item nxc.exe.zip
 
 # Download Evasion tools
 Set-Location C:\Tools\Evasion\
@@ -80,13 +82,18 @@ Invoke-WebRequest https://github.com/mkaring/ConfuserEx/releases/download/v1.6.0
 
 # Download Azure Tools
 Set-Location C:\Tools\Azure\
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azuread.2.0.2.140.nupkg -OutFile azuread.2.0.2.140.zip; Expand-Archive azuread.2.0.2.140.zip; Remove-Item azuread.2.0.2.140.zip
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azureadpreview.2.0.2.149.nupkg -OutFile azureadpreview.2.0.2.149.zip; Expand-Archive azureadpreview.2.0.2.149.zip; Remove-Item azureadpreview.2.0.2.149.zip
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/msonline.1.1.183.66.nupkg -OutFile msonline.1.1.183.66.zip; Expand-Archive msonline.1.1.183.66.zip; Remove-Item msonline.1.1.183.66.zip
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/microsoft.graph.1.7.0.nupkg -OutFile microsoft.graph.1.7.0.zip; Expand-Archive microsoft.graph.1.7.0.zip; Remove-Item microsoft.graph.1.7.0.zip
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/az.7.1.0.nupkg -OutFile az.7.1.0.zip; Expand-Archive az.7.1.0.zip; Remove-Item az.7.1.0.zip
-Invoke-WebRequest https://github.com/BloodHoundAD/AzureHound/releases/download/v1.2.1/azurehound-windows-amd64.zip -OutFile azurehound-windows-amd64.zip; Expand-Archive azurehound-windows-amd64.zip; Remove-Item azurehound-windows-amd64.zip
-Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/exchangeonlinemanagement.3.0.0.nupkg -OutFile exchangeonlinemanagement.3.0.0.zip; Expand-Archive exchangeonlinemanagement.3.0.0.zip; Remove-Item exchangeonlinemanagement.3.0.0.zip
+
+# Azure AD
+Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azuread.2.0.2.182.nupkg -OutFile azuread.2.0.2.182.zip; Expand-Archive azuread.2.0.2.182.zip; Remove-Item azuread.2.0.2.182.zip
+
+# Azure AD Preview
+Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/azureadpreview.2.0.2.183.nupkg -OutFile azureadpreview.2.0.2.183.zip; Expand-Archive azureadpreview.2.0.2.183.zip; Remove-Item azureadpreview.2.0.2.183.zip
+
+# MS ONline
+Invoke-WebRequest https://psg-prod-eastus.azureedge.net/packages/msonline.1.1.183.81.nupkg -OutFile msonline.1.1.183.81.zip; Expand-Archive msonline.1.1.183.81.zip; Remove-Item msonline.1.1.183.81.zip
+
+# Bloodhound
+Invoke-WebRequest https://github.com/BloodHoundAD/AzureHound/releases/download/v2.2.1/azurehound-windows-amd64.zip -OutFile azurehound-windows-amd64.zip; Expand-Archive azurehound-windows-amd64.zip; Remove-Item azurehound-windows-amd64.zip
 
 git clone https://github.com/NetSPI/MicroBurst
 git clone https://github.com/Gerenios/AADInternals
@@ -102,9 +109,9 @@ git clone https://github.com/dafthack/GraphRunner
 
 Install-Module -Name Az -Repository PSGallery -Force -Confirm
 Install-Module -Name Microsoft.Graph -Repository PSGallery -Force -Confirm
-Install-Module -Name Microsoft.Graph.Intune -Force -Confirm
-Install-Module ExchangePowerShell
-Install-Module ExchangeOnlineManagement
+Install-Module -Name Microsoft.Graph.Intune -Repository PSGallery -Force -Confirm
+Install-Module ExchangePowerShell -Repository PSGallery -Force -Confirm
+Install-Module ExchangeOnlineManagement -Repository PSGallery -Force -Confirm
 
 # General tools
 Set-Location C:\Tools\Misc
